@@ -26,8 +26,9 @@
     "sass": "^1.32.8"
   },
   "dependencies": {
-    "flatpickr": "^4.6.9",
+    "axios": "^0.26.1",
     "lodash.debounce": "^4.0.8",
-    "notiflix": "^3.2.4"
+    "notiflix": "^3.2.4",
+    "simplelightbox": "^2.10.3"
   }
 }
