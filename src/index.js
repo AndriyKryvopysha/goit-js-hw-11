@@ -1,7 +1,6 @@
 import './sass/main.scss';
 import { fetchImages } from './js/fetch_pixabay';
 import { renderGallery } from './js/render_gallery';
-// import { onScroll, onToTopBtn } from './js/scroll';
 import Notiflix from 'notiflix';
 import SimpleLightbox from 'simplelightbox';
 
@@ -18,12 +17,8 @@ const perPage = 40;
 searchForm.addEventListener('submit', onSearchForm);
 loadMoreBtn.addEventListener('click', onLoadMoreBtn);
 
-onScroll();
-onToTopBtn();
-
 function onSearchForm(e) {
   e.preventDefault();
-  window.scrollTo({ top: 0 });
   page = 1;
   q = e.currentTarget.searchQuery.value.trim();
   gallery.innerHTML = '';
